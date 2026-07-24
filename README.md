@@ -61,7 +61,7 @@ Importación del archivo CSV.
 - ## Problemas encontrados
 
 Durante la carga del archivo fue necesario ajustar el modelo de datos para permitir valores nulos en algunas columnas numéricas debido a inconsistencias presentes en el conjunto de datos original.
-
+Se diseñó un proceso ETL para la carga y normalización de indicadores financieros provenientes de archivos CSV con formatos numéricos regionales.
 ### 3. Modelado
 
 Creación de consultas SQL para análisis de:
@@ -101,7 +101,7 @@ El dashboard permite explorar:
 
 ---
 
-## Redultados
+## Resultados
 
 Ejemplo:
 
