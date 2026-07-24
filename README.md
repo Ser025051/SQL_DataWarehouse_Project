@@ -57,11 +57,9 @@ Importación del archivo CSV.
 - Corrección de formatos numéricos.
 - Validación de campos nulos.
 - Estandarización de nombres.
-
-- ## Problemas encontrados
-
-Durante la carga del archivo fue necesario ajustar el modelo de datos para permitir valores nulos en algunas columnas numéricas debido a inconsistencias presentes en el conjunto de datos original.
-Se diseñó un proceso ETL para la carga y normalización de indicadores financieros provenientes de archivos CSV con formatos numéricos regionales.
+- 
+## Problema identificados
+Durante la primera carga se detectó pérdida de información debido a diferencias en el formato numérico regional del archivo fuente.4 5Los valores financieros contenían separadores de miles y decimales incompatibles con la conversión automática de SQL Server.6 7## Solución implementada8 9Se realizó una carga inicial en una tabla staging utilizando tipos de datos de texto para preservar la información original.10 11Posteriormente los datos serían transformados y normalizados mediante procesos SQL antes de su uso analítico.
 ### 3. Modelado
 
 Creación de consultas SQL para análisis de:
