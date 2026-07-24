@@ -58,6 +58,10 @@ Importación del archivo CSV.
 - Validación de campos nulos.
 - Estandarización de nombres.
 
+- ## Problemas encontrados
+
+Durante la carga del archivo fue necesario ajustar el modelo de datos para permitir valores nulos en algunas columnas numéricas debido a inconsistencias presentes en el conjunto de datos original.
+
 ### 3. Modelado
 
 Creación de consultas SQL para análisis de:
