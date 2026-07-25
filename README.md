@@ -137,6 +137,16 @@ Importación del archivo CSV.
 3. Conversión de separadores de miles mediante SQL.
 4. Transformación de datos de texto a tipos numéricos.
 5. Creación de una tabla analítica para consumo en Power BI.**
+
+   ## Capa Analítica
+
+A partir de la tabla `Tarjetas_Limpias` se construyeron consultas y vistas SQL para analizar:
+
+- Tarjetas vigentes
+- Tarjetas canceladas
+- Tarjetas bloqueadas
+- Compras nacionales
+- Compras internacionales
 - 
 ## Problema identificados
 Durante la primera carga se detectó pérdida de información debido a diferencias en el formato numérico regional del archivo fuente.4 5Los valores financieros contenían separadores de miles y decimales incompatibles con la conversión automática de SQL Server.6 7## Solución implementada8 9Se realizó una carga inicial en una tabla staging utilizando tipos de datos de texto para preservar la información original.10 11Posteriormente los datos serían transformados y normalizados mediante procesos SQL antes de su uso analítico.
